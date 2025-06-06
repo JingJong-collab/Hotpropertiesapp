@@ -18,7 +18,7 @@
     <div class="property-container" th:each="property : ${properties}">
         <!--<img th:src="${property.images[0]}" alt="Property Image" class="property-img">-->
         <h3>
-            <a th:href="@{/buyer/properties/view(name=${property.id})}" th:text="${property.title}"></a>
+            <a th:href="@{/buyer/properties/view(id=${property.id})}" th:text="${property.title}"></a>
         </h3>
 
         <p><b>Price: $</b> <span th:text="${property.price}"></span></p>

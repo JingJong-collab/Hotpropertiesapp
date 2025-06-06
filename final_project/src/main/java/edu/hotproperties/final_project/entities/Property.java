@@ -22,7 +22,8 @@ public class Property {
     @Column(nullable = false)
     private double price;
 
-    @Column(nullable = false)
+    @Lob
+    @Column(nullable = false, length = 10000)
     private String description;
 
     @Column(nullable = false)

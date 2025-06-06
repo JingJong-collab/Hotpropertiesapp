@@ -25,6 +25,11 @@ public class PropertyImage {
         this.imageFilename = imageFilename;
     }
 
+    public PropertyImage(Property property, String imageFilename) {
+        this.property = property;
+        this.imageFilename = imageFilename;
+    }
+
     public Long getId() {
         return id;
     }

@@ -20,7 +20,7 @@
         <ul th:if="${#authorization.expression('hasRole(''BUYER'')')}" class="no-bullets">
             <li><a th:href="@{/profile}">My Profile</a></li>
             <li><a th:href="@{/buyer/properties/list}">Browse Properties</a></li>
-            <li><a  th:href="@{/buyer/favorites}">Saved Favorites</a></li>
+            <li><a  th:href="@{/buyer/favorites/favorites}">Saved Favorites</a></li>
             <li><a th:href="@{/buyer/view_message}">View Messages</a></li>
         </ul>
 
